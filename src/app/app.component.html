@@ -1,0 +1,66 @@
+<!-- <mat-form-field>
+    <mat-label>חיפוש</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="הקלד כאן" #input>
+  </mat-form-field>
+  <a click>  הכל  </a><a>נבחרו  </a><a>לא נבחרו    </a>
+  <mat-grid-list cols="5" rowHeight="1:1">
+    <mat-grid-tile><mat-button-toggle (click)="func(value)" value="1">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)" value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">4</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">5</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">1</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">2</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+    <mat-grid-tile><mat-button-toggle (click)="func(value)"value="2">3</mat-button-toggle></mat-grid-tile>
+  </mat-grid-list> -->
+  <mat-option *ngFor="let s of state" [value]="s">
+    {{s}}
+</mat-option>
+<table>
+    <tr *ngFor="let e of ELEMENT_DATA">
+        <td>{{col1}}</td>
+        <td>{{col2}}</td>
+        <td>{{col3}}</td>
+        <td>{{col4}}</td>
+        <td>{{col5}}</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>{{col1}}</td>
+        <td>{{col2}}</td>
+        <td>{{col3}}</td>
+        <td>{{col4}}</td>
+        <td>{{col5}}</td>
+    </tr>
+    <tr>
+        <td>{{col1}}</td>
+        <td>{{col2}}</td>
+        <td>{{col3}}</td>
+        <td>{{col4}}</td>
+        <td>{{col5}}</td>
+    </tr>
+</table>
+
+  <button (click)="func(value)" [value]="1">1</button>
+  <button (click)="func(value)" [value]="2">2</button>
+  <button (click)="func(value)" [value]="2">3</button>
+  <button (click)="func(value)" [value]="2">4</button>
+  <button (click)="func(value)" [value]="2">5</button>
+  <button (click)="func(value)" [value]="2">1</button>
+  <button (click)="func(value)" [value]="2">1</button>
+  <button (click)="func(value)" [value]="2">1</button>
+<p>רשימת כרטיסים שנבחרו</p><p>{{selectedNumbers}}</p>

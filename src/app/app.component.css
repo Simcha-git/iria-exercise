@@ -1,0 +1,15 @@
+body{
+    direction: rtl;
+    text-align: start;
+}
+
+mat-grid-tile {
+    position: absolute;
+  }
+
+  mat-grid-list {
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 500px
+    }
